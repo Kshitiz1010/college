@@ -1,0 +1,52 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Mega College</title>
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link href="assets/css/smart.css" rel="stylesheet" type="text/css" media="print,screen">
+	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/485BC365-A01C-584B-A6EB-DE4F58EFF2E0/main.js" charset="UTF-8"></script></head>
+	<body>
+		<div id="background">
+			<div id="Layer0"><img src="assets/img/smart-card/Layer0.png"></div>
+			<div id="idcard"><img src="assets/img/smart-card/idcard.png"></div>
+			<div id="Ellipse1">
+				<img src="assets/img/14729381_1298849283458726_6537800910814199074_n.jpg" width="75px" height="75px">
+			</div>
+			<div id="Name">
+				<p>Name: Kshitiz  Karmacharya</p>			</div>
+			<div id="Namecopy">
+				<p>Level: BSc(Hons) Computing</p>
+			</div>
+			<div id="Namecopy2">
+				<p>Student Id: 5</p>
+			</div>
+			<div id="Namecopy3">
+				<p>Address: Chapagaun, <br> <span id="location"> Godawari - 12, </span><br><span id="location">Kathmandu</span></p>
+			</div>
+			<div id="Namecopy4">
+				<p>Issue Date: 01/06/2016 | Expire Date: 09/18/2020</p>
+			</div>
+		</div>
+		<div class="row">
+			<!-- <a class="btn btn-primary btn-lg" href="info.php?id=5"> Back </a> -->
+			<button class="btn btn-success btn-lg" onclick="printDiv('background')"> Print </button>
+			<!-- <a class="btn btn-info btn-lg" href="index.php"> Next </a> -->
+			</div>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function printDiv(divName) {
+			    var printContents = document.getElementById(divName).innerHTML;
+			    var originalContents = document.body.innerHTML;
+
+			    document.body.innerHTML = printContents;
+
+			    window.print();
+
+			    document.body.innerHTML = originalContents;
+			}
+		</script>
+ </body>
+ </html>
